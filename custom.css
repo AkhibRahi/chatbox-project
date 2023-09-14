@@ -93,7 +93,7 @@
     }
 }
 @media not all and (min-width: 680px) {
-    img-container::before{
+    .img-container::before{
         content: "";
         background-image: url(/chatbox-img.avif);
         background-position: center;
@@ -101,7 +101,7 @@
         background-repeat: no-repeat;
         z-index: 1;
         position: absolute;
-        top: 60%;
+        top: 62%;
         left: 20%;
         width: 60%;
         height: 60%;
@@ -115,11 +115,29 @@
     }
 }
 
-@media not all and (min-width: 540px) {
-    img-container::before{
-        display: none;
+@media not all and (min-width: 545px){
+    .download-btn-top {
+        margin-top: 0px !important;
     }
-    .img-container {
-        display: none;
+    .download-btn button {
+        padding: 6px 10px !important;
+        margin-right: 8px !important; 
+    }
+    .try-for-free {
+        padding: 6px 10px !important;
+    }
+    .img-container::before{
+        content: "";
+        background-image: url(/chatbox-img.avif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        position: absolute;
+        top: 65%;
+    }
+    .platform-hding {
+        font-size: 17px;
+       
     }
 }
